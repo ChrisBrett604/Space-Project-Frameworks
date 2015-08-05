@@ -8769,3 +8769,70 @@ button.close {
     display: none !important;
   }
 }
+/* line 12, ../sass/styles.scss */
+#mainHero {
+  background-image: url("../img/hs-2009-25-i-xlarge_web.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60rem;
+  margin-top: -2rem;
+  position: relative;
+  text-align: center;
+}
+/* line 21, ../sass/styles.scss */
+#mainHero h1 {
+  display: inline-block;
+  color: #fff;
+  padding: 2rem;
+  border: 8px solid #fff;
+  margin: 20rem auto 0 auto;
+  font-size: 5rem;
+  font-weight: 900;
+}
+/* line 31, ../sass/styles.scss */
+#mainHero button {
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* line 41, ../sass/styles.scss */
+.firstSection {
+  margin-top: 2rem;
+  border: 2px solid #fff;
+}
+/* line 44, ../sass/styles.scss */
+.firstSection h2 {
+  text-align: center;
+}
+/* line 47, ../sass/styles.scss */
+.firstSection img {
+  width: 33%;
+  height: 33%;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+}
+
+/* line 56, ../sass/styles.scss */
+.sectionDividerOne {
+  background-image: url("../img/hs-2015-12-a-xlarge_web.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  position: relative;
+  text-align: center;
+  margin: 2rem 0;
+}
+/* line 64, ../sass/styles.scss */
+.sectionDividerOne h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 2rem;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid #fff;
+  margin: 15rem auto;
+}
