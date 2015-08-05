@@ -9,12 +9,36 @@
 
 // Space Project Custom Sass
 
+
+.navbar-inverse .navbar-nav > li > a {
+    padding:4.25rem;
+    
+}
+
+.navbar {
+    margin-bottom:0;
+}
+
+.navbar-header {
+    @media only screen and (max-width: 767px) {
+         padding:3rem;    
+        }
+    img {
+        width:40%;
+        
+        @media only screen and (max-width: 767px) {
+         margin:-3rem 0 0 0;
+        
+        }
+    }
+}
+
 #mainHero {
     background-image: url('../img/hs-2009-25-i-xlarge_web.jpg');
     background-size: cover;
     background-position: center;
     height:60rem;
-    margin-top: -2rem;
+    
     position: relative;
     text-align: center;
     
@@ -25,7 +49,7 @@
         padding:2rem;
         border: 8px solid #fff;
         margin:20rem auto 0 auto;
-        font-size:5rem;
+        font-size:8rem;
         font-weight: 900;
     }
     button {
