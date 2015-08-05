@@ -1,0 +1,228 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+// Make sure the charset is set appropriately
+
+// Behold, here are all the Foundation components.
+@import 'foundation/components/grid';
+@import 'foundation/components/accordion';
+@import 'foundation/components/alert-boxes';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/breadcrumbs';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
+@import 'foundation/components/clearing';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/dropdown-buttons';
+@import 'foundation/components/flex-video';
+@import 'foundation/components/forms';
+@import 'foundation/components/icon-bar';
+@import 'foundation/components/inline-lists';
+@import 'foundation/components/joyride';
+@import 'foundation/components/keystrokes';
+@import 'foundation/components/labels';
+@import 'foundation/components/magellan';
+@import 'foundation/components/orbit';
+@import 'foundation/components/pagination';
+@import 'foundation/components/panels';
+@import 'foundation/components/pricing-tables';
+@import 'foundation/components/progress-bars';
+@import 'foundation/components/range-slider';
+@import 'foundation/components/reveal';
+@import 'foundation/components/side-nav';
+@import 'foundation/components/split-buttons';
+@import 'foundation/components/sub-nav';
+@import 'foundation/components/switches';
+@import 'foundation/components/tables';
+@import 'foundation/components/tabs';
+@import 'foundation/components/thumbs';
+@import 'foundation/components/tooltips';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/type';
+@import 'foundation/components/offcanvas';
+@import 'foundation/components/visibility';
+
+// My custom scss to add
+
+.hero {
+    background-image: url('../img/hs-2015-12-a-xlarge_web.jpg');
+    background-size: cover;
+    height:45rem;
+    overflow:hidden;
+        @media only screen and (max-width: 40em) {
+           height:25rem; 
+        }
+    .heroText {
+        width:70%;
+        text-align: center;
+        position: relative;
+        top:25%;
+       // left:50%;
+        margin: 0 auto;
+        @media only screen and (max-width: 40em) {
+               top:25%;
+                width:80%
+            }
+    }
+    
+    h1 {
+       // width:100%;
+        display:inline-block;
+        color:$ghost;
+        padding:2rem;
+        border: 9px solid $ghost;
+        margin:0 auto;
+        font-size:5rem;
+        font-weight: 900;
+        
+         @media only screen and (max-width: 40em) { 
+             font-size:2rem;
+            // margin:0 0 0 50px;
+         }
+        }
+    .heroBtn {
+       margin:1.5rem auto;
+    }
+    
+   }
+.blurb {
+    background-color:$smoke;
+    margin:2rem 0;
+    padding:1.75rem;
+    border:2px solid $white;
+    
+    img {
+        display:block;
+        margin:auto;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+}
+
+.fullSection {
+    width: 100%;
+    background-image: url('../img/hs-2009-25-i-xlarge_web.jpg');background-position: center; background-size:cover;
+    height:20rem;  
+          
+    }
+
+.fullSectionText {
+    position: relative;
+    top:25%;
+    width:70%;
+    text-align: center;
+    margin:0 auto;
+    @media only screen and (max-width: 40em) { 
+                top:17%; 
+         }
+    
+    h1 {
+        //width:100%;
+        display:inline-block;
+        color:$ghost;
+        padding:2rem;
+        border: 5px solid $ghost;
+        font-size:3rem;
+        font-weight: 700;
+        
+         @media only screen and (max-width: 40em) { 
+             font-size:2rem;
+             
+             
+            
+         }
+    
+    }
+}
+
+.clearing-thumbs img {
+    width:75%;
+    height:75%;
+    margin:0 -1rem 0.5rem 0;
+    border-radius: 50%;
+    
+}
+
+.titleArea {
+
+    background:$jet;
+    
+    h2 {
+        text-align: center;
+        color:$ghost;
+        align-content: center;
+        
+    }
+}
+
+.blogPost {
+   // margin:0.5rem 0 0 0;
+    padding:0.5rem;
+    h3 {
+    text-align: center;
+    }
+    img {
+        float:left;
+        margin:0.5rem;
+        border-radius: 50%;
+    }
+}
+
+.toggleSection{
+    text-align: center;
+}
+
+.contactUs {
+    background-image: url('../img/hs-2010-22-a-large_web.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#contactUs {
+    padding:3rem 2rem 2rem 2rem;
+}
+
+.footer-section {
+    background:$jet;
+    color:$ghost;
+   // height:70%;
+    padding:1rem;
+}
+
+.footWidget {
+
+
+    img {
+        width:25%;
+        height:25%;
+        border-radius: 50%;
+        float:left;
+        margin:0 1rem 1rem 0;
+        @media only screen and (max-width: 40em) {
+             
+        }
+    }
+    li {
+        list-style: none;
+        display:inline;
+       
+    }
+    h3{
+        color:$ghost;
+        text-align: center;
+    }
+
+}
+.lastRow {
+    background-color: $black;
+    padding:1rem;
+    color:$smoke;
+    text-align: center;
+    
+}
+
+form h2 {
+    text-align: center;
+}
