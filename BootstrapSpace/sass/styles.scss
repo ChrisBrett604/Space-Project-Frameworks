@@ -79,7 +79,15 @@
 
 .sectionDividerOne {
     background-image: url('../img/hs-2015-12-a-xlarge_web.jpg');
-    background-size: cover;
+}
+
+.sectionDividerTwo {
+    background-image: url('../img/hs-2010-22-a-large_web.jpg');
+}
+
+
+.sectionDividerOne, .sectionDividerTwo, .contactSection {
+     background-size: cover;
     background-position: center;
     height:40rem;
     position:relative;
@@ -93,5 +101,79 @@
         color:#fff;
         border:8px solid #fff;
         margin:15rem auto;
+    }
+}
+
+.customModal {
+    
+    button {
+        display: block;
+        margin:2rem auto;
+    }
+}
+
+.customTitle {
+    background:#333;
+    text-align: center;
+    color:#fff;
+    padding:3rem;
+    
+    h2{
+        font-size: 4rem;
+    }
+}
+
+.blogPostBlurb {
+    
+    margin:2rem 0;
+    img {
+        float:left;
+        padding:1rem;
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .learnMore {
+        position: relative;
+        
+    }
+    button {
+        display: block;
+        margin:2rem auto;
+    }
+}
+
+.contactSection {
+    margin-bottom: 0;
+    background-image: url('../img/hs-2009-25-i-xlarge_web.jpg');
+    form {
+        padding:5rem 2rem 2rem 2rem;
+        background-color:#999;
+        margin:7rem 0 0 0;
+    }
+}
+
+.primaryFooter {
+    height:45rem;
+    background-color:#222;
+    color:#fff;
+    h3 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    img {
+        padding:1rem;
+        width:30%;
+        float:left;
+        
+    }
+    p {
+        margin-bottom: 3rem;
+        padding:1rem 0 2rem 0;
+    }
+    li {
+        list-style: none;
+        display: inline;
     }
 }
