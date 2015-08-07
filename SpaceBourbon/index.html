@@ -6,35 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Space Bourbon</title>
     <link href="stylesheets/style.css" rel="stylesheet">
+    
   </head>
 <body>
 <header>
-<h1>Hello world!</h1>
-<h2>This is a W3C valid HTML5 template skeleton.</h2>
-
-<nav>
-<a href=”#”>This is a navigation element.</a>
-<a href=”#”>And so is this.</a>
-</nav>
+<!-- Navigation Start -->
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="#" class="logo">
+      <img src="img/bourbonLogo.jpeg" alt="Logo Image">
+    </a>
+    <a href="#" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="#">Page 1</a></li>
+        <li class="nav-link"><a href="#">Page 2</a></li>
+        <li class="nav-link"><a href="#">Page 3</a></li>
+        <li class="nav-link more"><a href="#">Page 4</a>
+          <ul class="submenu">
+            <li><a href="#">Submenu Item</a></li>
+            <li><a href="#">Another Item</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+  </div>
 </header>
 
-<div>
-<section id=”about-the-template”>
-<h3>Some fun facts on HTML5.</h3>
-<p>You should always use div elements for your wrappers and styling.</p>
-<p>Section elements should only be used to declare a content section.</p>
-</section>
-<section id=”news”>
-<article id=”html5-is-the-new-norm”>
-<h2>HTML5 is becoming the industry standard.</h2>
-<p>For news and blogs, you should always make use for the article element. It allows browsers, search engines and all other technology know that it is reading an article.</p>
-</article>
-</section>
+<!-- Navigation End -->
+<!-- Hero Start -->
+<div id="mainHero">
+    <div class="innerHero">
+        <h1>SPACE BOURBON</h1>
+        <button role="button">BLAST OFF!</button>
+    </div>
 </div>
+<!-- Hero End -->
+
 
 <footer>
 <p>HTML5 is awesome!</p>
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/scripts.js"></script>
 
 </body>
 </html>
