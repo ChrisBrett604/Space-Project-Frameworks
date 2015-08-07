@@ -1,0 +1,11 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+body {
+    background-color:#999;
+}
+
+h1 {
+    border:$em-base solid #000;
+}
