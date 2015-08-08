@@ -433,13 +433,16 @@ header.navigation {
     display: table; }
 
 .innerHero {
-  width: 70%;
+  width: 50%;
   position: relative;
   margin: 0 auto;
-  top: 33%; }
+  top: 25%; }
   .innerHero h1 {
+    display: block;
     text-align: center;
     font-size: 5em;
+    font-weight: 700;
+    margin: 0 auto;
     padding: 0.5em;
     color: #fff;
     border: 0.15em solid #fff; }
@@ -448,6 +451,53 @@ header.navigation {
     font-size: 1.75em;
     padding: 1em;
     border-radius: 5%;
-    margin: 0 auto; }
+    margin: 1em auto; }
+
+.blurbContainer {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em auto; }
+  .blurbContainer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .blurbContainer .blurb {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .blurbContainer .blurb:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 859px) {
+      .blurbContainer .blurb {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 151.78933%;
+        margin: 1em 0; }
+        .blurbContainer .blurb::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .blurbContainer .blurb:last-child {
+          margin-right: 0; } }
+  .blurbContainer img {
+    float: left;
+    border-radius: 50%;
+    padding: 1em; }
+  .blurbContainer h2 {
+    font-size: 2em;
+    text-align: center; }
+
+#sectionTwo {
+  background-image: url("/img/hs-2009-25-i-xlarge_web.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

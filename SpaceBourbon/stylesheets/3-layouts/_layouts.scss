@@ -1,3 +1,7 @@
+$tablet: new-breakpoint(max-width 859px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+
 // Navigation Start
 header.navigation {
   $base-border-color: gainsboro !default;
@@ -356,15 +360,18 @@ header.navigation {
 }
 
 .innerHero {
-    width:70%;
+    width:50%;
     position: relative;
     margin:0 auto;
-    top:33%;
+    top:25%;
     
     h1 {
+        display:block;
         text-align: center;
         font-size:5em;
+        font-weight:700;
        // width:100%;
+        margin:0 auto;
         padding:0.5em;
         color:#fff;
         border:0.15em solid #fff;
@@ -375,8 +382,49 @@ header.navigation {
         font-size: 1.75em;
         padding:1em;
         border-radius: 5%;
-        margin:0 auto;
+        margin:1em auto;
     }
 }
 
 //Hero End
+// Blurbs Start
+
+.blurbContainer {
+    @include outer-container(75%);
+    margin:2em auto;
+    
+    .blurb {
+        @include span-columns(4);
+        @include media($tablet) {
+            @include outer-container(100%);
+            @include span-columns(12);
+            margin:1em 0;
+        }
+        
+    }
+    img {
+        float:left;
+        border-radius:50%;
+        padding:1em;
+    }
+    h2 {
+        font-size:2em;
+        text-align: center;
+    }
+}
+
+
+// Blurbs Ends
+// Section Two Start
+
+#sectionTwo {
+    background-image: url('/img/hs-2009-25-i-xlarge_web.jpg');
+    background-position: center;
+    background-size: cover;
+    height:25em;
+    position: relative;
+    
+}
+
+
+// Section Two Ends
