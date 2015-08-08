@@ -1,3 +1,4 @@
+$smallDesktop: new-breakpoint(max-width 1030px 12);
 $tablet: new-breakpoint(max-width 859px 8);
 $mobile: new-breakpoint(max-width 480px 4);
 
@@ -351,30 +352,38 @@ header.navigation {
 // Hero Start
 
 #mainHero {
-   @include outer-container(100%);
     background-image: url('/img/hs-2007-16-f-xlarge_web.jpg');
     background-position: center;
     background-size: cover;
-    height:45em;
+    height:40em;
     position: relative;
+    @include media($tablet) {
+        height:25em;
+    }
 }
 
 .innerHero {
-    width:50%;
+    width:65%;
     position: relative;
     margin:0 auto;
-    top:25%;
+    top:30%;
     
     h1 {
         display:block;
         text-align: center;
-        font-size:5em;
+        font-size:400%;
         font-weight:700;
        // width:100%;
         margin:0 auto;
         padding:0.5em;
         color:#fff;
         border:0.15em solid #fff;
+        @include media($smallDesktop) {
+            font-size: 300%;
+        }
+        @include media($tablet) {
+            font-size: 200%;
+        }
        
     }
     button {
@@ -383,6 +392,9 @@ header.navigation {
         padding:1em;
         border-radius: 5%;
         margin:1em auto;
+        @include media($tablet) {
+            font-size: 1em;
+        }
     }
 }
 
@@ -423,6 +435,9 @@ header.navigation {
     background-size: cover;
     height:25em;
     position: relative;
+    @include media($tablet) {
+        height:15em;
+    }
     
 }
 

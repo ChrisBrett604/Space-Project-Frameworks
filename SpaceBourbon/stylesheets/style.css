@@ -419,39 +419,44 @@ header.navigation {
           display: block; } }
 
 #mainHero {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url("/img/hs-2007-16-f-xlarge_web.jpg");
   background-position: center;
   background-size: cover;
-  height: 45em;
+  height: 40em;
   position: relative; }
-  #mainHero::after {
-    clear: both;
-    content: "";
-    display: table; }
+  @media screen and (max-width: 859px) {
+    #mainHero {
+      height: 25em; } }
 
 .innerHero {
-  width: 50%;
+  width: 65%;
   position: relative;
   margin: 0 auto;
-  top: 25%; }
+  top: 30%; }
   .innerHero h1 {
     display: block;
     text-align: center;
-    font-size: 5em;
+    font-size: 400%;
     font-weight: 700;
     margin: 0 auto;
     padding: 0.5em;
     color: #fff;
     border: 0.15em solid #fff; }
+    @media screen and (max-width: 1030px) {
+      .innerHero h1 {
+        font-size: 300%; } }
+    @media screen and (max-width: 859px) {
+      .innerHero h1 {
+        font-size: 200%; } }
   .innerHero button {
     display: block;
     font-size: 1.75em;
     padding: 1em;
     border-radius: 5%;
     margin: 1em auto; }
+    @media screen and (max-width: 859px) {
+      .innerHero button {
+        font-size: 1em; } }
 
 .blurbContainer {
   max-width: 75%;
@@ -499,5 +504,8 @@ header.navigation {
   background-size: cover;
   height: 25em;
   position: relative; }
+  @media screen and (max-width: 859px) {
+    #sectionTwo {
+      height: 15em; } }
 
 /*# sourceMappingURL=style.css.map */
