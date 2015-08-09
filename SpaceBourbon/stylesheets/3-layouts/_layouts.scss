@@ -443,3 +443,20 @@ header.navigation {
 
 
 // Section Two Ends
+
+#galleryHeadModal {
+    @include outer-container(75%);
+    margin-top:2em;
+}
+
+.gallerySection {
+    @include span-columns(6);
+    h2 {
+        text-align: center;
+        font-size: 200%;
+    }
+    img {
+        border-radius: 50%;
+        margin:0 2em 2em 0;
+    }
+}
