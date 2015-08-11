@@ -366,7 +366,7 @@ header.navigation {
     width:65%;
     position: relative;
     margin:0 auto;
-    top:30%;
+    top:25%;
     
     h1 {
         display:block;
@@ -459,4 +459,45 @@ header.navigation {
         border-radius: 50%;
         margin:0 2em 2em 0;
     }
+}
+
+.sectionLabel {
+    background-color: #222222;
+    color:#ffffff;
+    font-size: 3em;
+    padding:1em 0 0.25em 0;
+    text-align: center;
+}
+
+#recentPosts {
+    @include outer-container(75%);
+    margin:2em auto;
+    
+
+}
+
+.blogPost {
+    @include span-columns(4);
+    h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+    img {
+        border-radius: 50%;
+        float:left;
+        padding:1em;
+    }
+    button {
+        color:#ffffff;
+        background-color: blue;
+        border-radius: 5%;
+        float:right;
+    }
+}
+
+#lastSection {
+    background-image: url('/img/hs-2009-25-i-xlarge_web.jpg');
+    background-position: center;
+    background-size: cover;
+    height:25em;
 }

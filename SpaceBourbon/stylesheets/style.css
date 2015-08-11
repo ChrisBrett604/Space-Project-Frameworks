@@ -558,7 +558,7 @@ header.navigation {
   width: 65%;
   position: relative;
   margin: 0 auto;
-  top: 30%; }
+  top: 25%; }
   .innerHero h1 {
     display: block;
     text-align: center;
@@ -657,5 +657,48 @@ header.navigation {
   .gallerySection img {
     border-radius: 50%;
     margin: 0 2em 2em 0; }
+
+.sectionLabel {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 3em;
+  padding: 1em 0 0.25em 0;
+  text-align: center; }
+
+#recentPosts {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em auto; }
+  #recentPosts::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.blogPost {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .blogPost:last-child {
+    margin-right: 0; }
+  .blogPost h3 {
+    text-align: center;
+    font-size: 2em; }
+  .blogPost img {
+    border-radius: 50%;
+    float: left;
+    padding: 1em; }
+  .blogPost button {
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 5%;
+    float: right; }
+
+#lastSection {
+  background-image: url("/img/hs-2009-25-i-xlarge_web.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 25em; }
 
 /*# sourceMappingURL=style.css.map */
